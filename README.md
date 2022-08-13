@@ -10,7 +10,7 @@ $ yarn build
 ```
 
 # Starting the bot
-To start the bot, run the following command after compiling and inserting your bot's token in the .env file:
+To start the bot, run the following command after compiling and inserting your bot's token in the `.env` file:
 ```
 $ yarn start:prod
 ```
