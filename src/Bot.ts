@@ -6,6 +6,7 @@ import { Command } from "./structures/Command";
 import { FAQCommand } from "./commands/faq";
 import { TryCommand } from "./commands/general";
 import { UrlCommand } from "./commands/link";
+import onMessage from "./events/onMessage";
 
 dotenv.config();
 const client = new Client({ intents: [] });
@@ -17,5 +18,6 @@ export const Commands: Command[] = [
 
 onReady(client);
 onInteraction(client);
+onMessage(client)
 
 client.login(token);
