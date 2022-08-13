@@ -4,7 +4,6 @@ import { FAQCommand } from "./commands/faq";
 import { TryCommand } from "./commands/general";
 import { UrlCommand } from "./commands/link";
 import onInteraction from "./events/onInteraction";
-import onMessage from "./events/onMessage";
 import onReady from "./events/onReady";
 import { Command } from "./structures/Command";
 
