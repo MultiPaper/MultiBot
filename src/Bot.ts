@@ -9,7 +9,7 @@ import onReady from "./events/onReady";
 import { Command } from "./structures/Command";
 
 dotenv.config();
-const client = new Client({ intents: ["GuildMessages"] });
+const client = new Client({ intents: [] });
 const token = process.env.token;
 
 export const Commands: Command[] = [
