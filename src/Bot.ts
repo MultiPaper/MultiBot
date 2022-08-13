@@ -17,6 +17,5 @@ export const Commands: Command[] = [
 
 onReady(client);
 onInteraction(client);
-onMessage(client)
 
 client.login(token);
