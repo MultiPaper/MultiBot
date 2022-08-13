@@ -1,15 +1,15 @@
 import { Client } from "discord.js";
 import * as dotenv from "dotenv";
-import onReady from "./events/onReady";
-import onInteraction from "./events/onInteraction"
-import { Command } from "./structures/Command";
 import { FAQCommand } from "./commands/faq";
 import { TryCommand } from "./commands/general";
 import { UrlCommand } from "./commands/link";
+import onInteraction from "./events/onInteraction";
 import onMessage from "./events/onMessage";
+import onReady from "./events/onReady";
+import { Command } from "./structures/Command";
 
 dotenv.config();
-const client = new Client({ intents: [] });
+const client = new Client({ intents: ["GuildMessages"] });
 const token = process.env.token;
 
 export const Commands: Command[] = [
