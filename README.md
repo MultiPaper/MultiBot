@@ -1,5 +1,5 @@
 # MultiBot
-Discord bot for the MultiPaper Discord server
+Discord bot for the MultiPaper Discord server that provides various utility commands
 
 # Building
 In order to build this project, ensure you have [Node](https://nodejs.org/en/) installed.
@@ -10,7 +10,7 @@ $ yarn build
 ```
 
 # Starting the bot
-To start the bot, run the following command after compiling and inserting your bot's token in the .env file:
+To start the bot, run the following command after compiling and inserting your bot's token in the `.env` file:
 ```
 $ yarn start:prod
 ```
