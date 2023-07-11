@@ -5,13 +5,14 @@ import { TryCommand } from "./commands/general";
 import { UrlCommand } from "./commands/link";
 import onInteraction from "./events/onInteraction";
 import onReady from "./events/onReady";
+import onMessageCreate from "./events/onMessageCreate";
 import { Command } from "./structures/Command";
-import onMessageCreate from "src/events/onMessageCreate";
 
 dotenv.config();
 const client = new Client({ intents: [
     'MessageContent',
-    'GuildMessages'
+    'GuildMessages',
+    'Guilds'
 ] });
 const token = process.env.token;
 
